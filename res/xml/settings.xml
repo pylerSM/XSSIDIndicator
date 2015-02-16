@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/app_settings" >
+        <EditTextPreference
+            android:defaultValue="7"
+            android:key="max_length"
+            android:inputType="number"
+            android:summary="@string/max_length_summary"
+            android:title="@string/max_length_title" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_carrier"
+            android:summary="@string/show_carrier_summary"
+            android:title="@string/show_carrier_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">XSSID 指示器</string>
+	<string name="app_settings">设置</string>
+	<string name="app_description">在状态栏显示Wi-Fi SSID</string>
+	<string name="max_length_title">最大长度</string>
+	<string name="max_length_summary">如果Wi-Fi SSID/运营商名称的长度大于最大长度，将仅显示最大长度范围内的部分</string>
+	<string name="show_carrier_title">显示运营商名称</string>
+	<string name="show_carrier_summary">当设备未连接Wi-Fi时代以显示运营商名称</string>
+</resources>

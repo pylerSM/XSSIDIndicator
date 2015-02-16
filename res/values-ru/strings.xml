@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Название сети</string>
+	<string name="app_settings">Настройки</string>
+	<string name="app_description">Отображает название Wi-Fi или оператора в строке состояния</string>
+	<string name="max_length_title">Максимальная длина</string>
+	<string name="max_length_summary">Если длина Wi-Fi SSID / оператора больше, чем максимальная длина, название будут ограниченно максимальной длинной.</string>
+	<string name="show_carrier_title">Показать название оператора</string>
+	<string name="show_carrier_summary">Показать название оператора, когда устройство не подключено к Wi-Fi.</string> 
+</resources>

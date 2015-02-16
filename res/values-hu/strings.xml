@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XSSID Kijelző</string>
+    <string name="app_settings">Beállitások</string>
+    <string name="app_description">Megjeleniti a Wi-Fi SSID-t az Állapotsorban</string>
+    <string name="max_length_title">Maximális hossza</string>
+    <string name="max_length_summary">Ha a Wi-Fi SSID / neve hosszabb mint a maximális hossz, akkor a nevet le kell röviditeni.</string>
+    <string name="show_carrier_title">Wifi Név</string>
+    <string name="show_carrier_summary">Mutassa a Wi-Fi nevét akkor is, ha készülék nem csatlakozik a Wi-Fi-hez.</string>
+</resources>

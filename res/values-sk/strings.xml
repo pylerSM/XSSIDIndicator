@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XSSID Indikátor</string>
+    <string name="app_settings">Nastavenia</string>
+    <string name="app_description">Zobraziť Wi-Fi SSID v stavovom riadku</string>
+    <string name="max_length_title">Maximálna dĺžka</string>
+    <string name="max_length_summary">Ak je dĺžka názvu Wi-Fi SSID alebo operátora dlhšia ako maximálna, názvy budú skrátené na maximálnu dĺžku.</string>
+    <string name="show_carrier_title">Zobraziť názov operátora</string>
+    <string name="show_carrier_summary">Zobraziť názov operátora, keď zariadenie nie je pripojené na Wi-Fi.</string>
+</resources>

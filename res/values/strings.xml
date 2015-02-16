@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XSSID Indicator</string>
+    <string name="app_settings">Settings</string>
+    <string name="app_description">Show Wi-Fi SSID in status bar</string>
+    <string name="max_length_title">Maximal length</string>
+    <string name="max_length_summary">If length of Wi-Fi SSID/carrier is longer than maximal length, names will be wrapped to maximal length.</string>
+    <string name="show_carrier_title">Show carrier name</string>
+    <string name="show_carrier_summary">Show carrier name when device is not connected to Wi-Fi.</string>
+</resources>
