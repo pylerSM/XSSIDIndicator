@@ -24,7 +24,21 @@ public class XSSIDIndicator implements IXposedHookLoadPackage {
 					@Override
 					protected void afterHookedMethod(MethodHookParam param)
 							throws Throwable {
-						final Context context = (Context) XposedHelpers
+						TextView clockText = null;
+						try {
+							clockText = (TextView) param.thisObject;
+						} catch (ClassCastException cce) {
+							try {
+								clockText = (TextView) XposedHelpers
+										.getObjectField(param.thisObject,
+												"mClockView");
+							} catch (NoSuchFieldError nsfe) {
+							}
+						}
+						if (clockText == null) {
+							return;
+						}
+						Context context = (Context) XposedHelpers
 								.getObjectField(param.thisObject, "mContext");
 						WifiManager wifiManager = (WifiManager) context
 								.getSystemService(Context.WIFI_SERVICE);
@@ -33,9 +47,8 @@ public class XSSIDIndicator implements IXposedHookLoadPackage {
 						TelephonyManager manager = (TelephonyManager) context
 								.getSystemService(Context.TELEPHONY_SERVICE);
 						String carrier = manager.getNetworkOperatorName();
-						TextView tv = (TextView) param.thisObject;
-						String text = tv.getText().toString();
-						String customtext = tv.getText().toString();
+						String text = clockText.getText().toString();
+						String customtext = text;
 						boolean hasGSM = (manager.getPhoneType() != TelephonyManager.PHONE_TYPE_NONE);
 						XSharedPreferences settings = new XSharedPreferences(
 								XSSIDIndicator.class.getPackage().getName());
@@ -57,7 +70,7 @@ public class XSSIDIndicator implements IXposedHookLoadPackage {
 							}
 							customtext = wifiSSID + " " + text;
 						}
-						tv.setText(customtext);
+						clockText.setText(customtext);
 					}
 				});
 	}
